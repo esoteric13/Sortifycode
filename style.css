@@ -7,7 +7,7 @@
   body{
     font-family: "Lora", serif;
     font-optical-sizing: auto;
-     font-style: italic;
+     overflow: hidden;
   }
   .navbar{
     display:flex;
@@ -52,22 +52,19 @@
   }
   .container{
     height:100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .col2{
     flex-basis: 55%;
     min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .col2 img{
     max-width:100%;

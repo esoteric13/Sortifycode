@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet"  href="registerstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                  <img src="images/logo.png" alt="logo">
+                  <h4>Sortify</h4>
+                <nav>
+                    <ul>
+                        <li ><a  href=""><button>Home</button></a></li>
+                        <li ><a  href=""><button>Services</button></a></li>
+                        <li ><a  href=""><button>About</button></a></li>
+                        <li ><a  href=""><button>Contact</button></a></li>
+                     </ul>
+                 </nav>
+            </div>
+              <div class="row">
+                   <div class="col1">
+                    <img src="images/reg.png" id="register" alt="register">
+                   </div>
+                   <div class="col2">
+                   <img src="images/icon-removebg-preview.png" id="person">
+                   <form id="registrationForm" onsubmit="return validateForm()">
+                    <div>
+                      <label for="username">Username: </label>
+                      <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                      <label for="email">Email:     </label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                      <label for="phno">Mobile no:</label>
+                      <input type="number" id="phno" name="phno" required>
+                    </div>
+                    <div>
+                      <label for="password">Password:</label>
+                      <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                      <label for="confirmPassword">Confirm Password:</label>
+                      <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div>
+                      <label for="utype">User type:</label>
+                      <select name="utype" id="utype">
+                        <option value="select">Select</option>
+                        <option value="collect">Collect Garbage</option>
+                        <option value="dump">Dump Garbage</option>
+                      </select>
+                    </div>
+                    <br><br>
+                    <div>
+                     <button><h5>Sign Up</h5></button>
+                    </div>
+                  </form>
+                   </div>
+              </div>
+        </div>
+    </div> 
+    <script>
+      function validateForm() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var email = document.getElementById("email").value;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+          return false;
+        }
+        if (!emailPattern.test(email)) {
+          alert("Invalid email address");
+          return false;
+        }
+  
+        return true;
+      }
+    </script>
+</body>
+</html>

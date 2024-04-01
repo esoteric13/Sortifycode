@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  }
+  body{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+     
+     
+  }
+  .navbar{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    background-color: #ACEAFF;
+    text-align: left;
+    width:100vw;
+    height: 16%;
+    position: absolute;
+    margin:3px 3px 3px;
+  }
+  .navbar img{
+    width:6%;
+  }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul{
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li{
+    display:inline-block;
+    margin:10px;
+  }
+  nav ul li  button {
+    padding: 10px 20px;
+    background-color: #2C6C7A;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  a{
+    text-decoration: none;
+    color:#555;
+  }
+  p{
+    color:#555;
+  }
+  .container{
+    height:100vh;
+    overflow: hidden;
+  }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+.container2{
+  height: 100vh;
+  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+h2{
+    color: #3E1C4F;
+    
+}
+.Box-2{
+   overflow: hidden; 
+    background-color: #E4F8FF;
+    width: 500px;
+    height:70%;
+    border-radius: 20px;
+    text-align: center;
+    /* justify-content: space-between;   */
+}
+button{
+  padding: 10px 20px;
+    background-color: #2C6C7A;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.Box-2 img{
+  text-align:center;
+  width: 77px;
+  height: 70px;
+  top: 180px;
+  left: 1120px;
+}
+.Box-2 a{
+  color:red;
+}
+form {
+  margin-bottom: 30px; 
+}
+
+form label {
+  margin-bottom: 15px; 
+}
+
+form input,
+form select,
+form button,
+form a {
+  margin-bottom: 20px; 
+}
+.Box-1{
+  margin-top:70px;
+}
